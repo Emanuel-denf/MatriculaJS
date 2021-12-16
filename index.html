@@ -8,6 +8,34 @@
 </head>
 <body>
     <h1>Matricula</h1>
-    <script src="script.js"></script>
+    <main>
+        <script src="script.js"></script>
+        <form id="formulario_principal" method="post" action="" onsubmit="event.preventDefault(); controlar_cadastro_Alunos(alunos)">
+            <label for="nome">Digite o nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="idade">Digite a idade:</label>
+            <input type="number" name="idade" id="idade">
+            <label for="matricula">Digite a Matricula:</label>
+            <input type="number" name="matricula" id="matricula">
+            <input type="text" id="id">
+            <button>Confirmar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>| ID |</th>
+                    <th>| nome |</th>
+                    <th>| idade |</th>
+                    <th>| matricula|</th>
+                    <th>| ação |</th>
+                </tr>
+            </thead>
+            <tbody id='tabela_dados'>
+                
+            </tbody>
+        </table>
+        <button onclick="mostrar_lista_html(alunos)">listar</button>
+    </main>
 </body>
 </html>
